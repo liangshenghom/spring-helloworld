@@ -7,10 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 	
-	@GetMapping("/index")
+	@GetMapping("/")
 	public String  index() {
 		
-		return "首页";
+		return "index";
+	}
+	
+	@GetMapping("/index2")
+	public String  index2() {
+		
+		return "index2";
 	}
 
 }
